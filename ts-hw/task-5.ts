@@ -4,8 +4,18 @@
     name (string), age (number), address (об'єкт з city і street)
     та призначити його тип об'єкту person.
 */
+interface Address {
+    city: string;
+    street: string;
+}
 
-const person = {
+interface Person {
+    name: string;
+    age: number;
+    address: Address;
+}
+
+const person: Person = {
     name: "Alex",
     age: 25,
     address: {
@@ -13,3 +23,5 @@ const person = {
         street: "Хрещатик"
     }
 };
+
+export {};
